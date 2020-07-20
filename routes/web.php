@@ -50,3 +50,7 @@ Route::prefix('admin')
     });
 
 Auth::routes(['verify' => true]);
+Route::middleware('ssl')->group(function() {
+    // All your routes here
+
+});
